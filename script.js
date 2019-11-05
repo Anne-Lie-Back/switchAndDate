@@ -4,11 +4,14 @@ let weekday
 let month
 let time
 
+
 getTime()
 document.getElementById("displayTime").innerHTML = time
 
 getWeekday()
 document.getElementById("displayWeekday").innerHTML = weekday
+
+document.getElementById("displayDate").innerHTML = date.getDate()
 
 getDisplayMonth()
 document.getElementById("displayMonth").innerHTML = month
@@ -60,6 +63,11 @@ function getWeekday(){
     }
 
 }
+
+/**
+ * Get number in month
+ * 
+ */
 
 /**
  * Gets month by name
