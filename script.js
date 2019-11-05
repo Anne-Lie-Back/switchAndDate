@@ -1,14 +1,10 @@
 
 let date = new Date()
-
-
-let currentDate = date.toDateString()
 let weekday 
-
-
-let time = date.getTime()
 let month
+let time
 
+getTime()
 document.getElementById("displayTime").innerHTML = time
 
 getWeekday()
@@ -17,9 +13,11 @@ document.getElementById("displayWeekday").innerHTML = weekday
 getDisplayMonth()
 document.getElementById("displayMonth").innerHTML = month
 
-
+/**
+ * Transforms time to time-string
+ */
 function getTime(){
-    
+    time = date.toLocaleTimeString()
 }
 
 /**
