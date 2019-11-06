@@ -28,7 +28,10 @@ function timeDateMonth(){
 
 }
 
-
+/**
+ * Get time and converts to string
+ * 
+ */
 function getTime()
 {
     const now = new Date();

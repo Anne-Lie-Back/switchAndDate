@@ -33,7 +33,7 @@ header h1{
 
 .hero-div{
     
-    background-image: url("/whatTimeIsIt-hero-img.png");
+    background-image: url("./whatTimeIsIt-hero-img.png");
     height: 100%;  
     display:flex;
     align-items: center;
