@@ -59,19 +59,19 @@ header h1{
 }
 
 #displayWeekday{
-    font-size: 4rem;
+    font-size: 3.2rem;
 }
 
 .dayAndMonth{
     display:flex;
 }
 #displayDate{
-    font-size: 3rem;
+    font-size: 2.8rem;
     margin: 0 0.8rem 0 0 ;
 }
 
 #displayMonth{
-    font-size: 3rem;
+    font-size: 2.8rem;
 }
 
 footer{
