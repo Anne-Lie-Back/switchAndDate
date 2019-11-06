@@ -6,10 +6,11 @@
 }
 
 body{
-    background-color: white;
+    background-color: black;
     width:100%;
     height:100vh;
 
+    letter-spacing:0.7px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -27,6 +28,7 @@ header{
 header h1{
     color:white;
     font-size: 1.7rem;
+    margin: 0 0 0 2rem;
 }
 
 .hero-div{
@@ -35,7 +37,7 @@ header h1{
     height: 100%;  
     display:flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     position:relative;
     background-position: center;
     background-repeat: no-repeat;
@@ -46,27 +48,30 @@ header h1{
 .date-container{
     color:white;
     display:flex;
+    
     flex-direction: column;
     text-shadow: 0 0 5px black;
+    margin: 0 0 0 11rem;
 }
 
 #displayTime{
-    font-size: 5rem;
+    font-size: 6rem;
 }
 
 #displayWeekday{
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .dayAndMonth{
     display:flex;
 }
 #displayDate{
-    font-size: 2rem;
+    font-size: 3rem;
+    margin: 0 0.8rem 0 0 ;
 }
 
 #displayMonth{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 footer{

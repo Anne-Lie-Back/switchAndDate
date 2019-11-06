@@ -1,33 +1,42 @@
 
+
+
 let date = new Date()
 let weekday 
 let month
-let time
 
 
-getTime()
-document.getElementById("displayTime").innerHTML = time
-
-getWeekday()
-document.getElementById("displayWeekday").innerHTML = weekday
-
-document.getElementById("displayDate").innerHTML = date.getDate()
-
-getDisplayMonth()
-document.getElementById("displayMonth").innerHTML = month
+timeDateMonth()
+let runTime = setInterval(timeDateMonth, 1000)
 
 /**
  * Transforms time to time-string
  */
-function getTime(){
-    time = date.toLocaleTimeString()
-}
 
+
+function timeDateMonth(){
+
+    getTime()
+
+    getWeekday()
+    
+    document.getElementById("displayDate").innerHTML = date.getDate()
+
+    getDisplayMonth()
+
+}
 /**
  * Gets weekday by name
  */
 
+function getTime(){
+    time = date.toLocaleTimeString()
+    document.getElementById("displayTime").innerHTML = time
+}
+
 function getWeekday(){
+
+    document.getElementById("displayWeekday").innerHTML = weekday
 
     switch (date.getDay()){
         case 0:
@@ -74,6 +83,7 @@ function getWeekday(){
  */
 
 function getDisplayMonth(){
+    document.getElementById("displayMonth").innerHTML = month
     switch(date.getMonth()){
         case 0:
             month = 'January'
