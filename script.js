@@ -1,9 +1,24 @@
 
 
-
+/**
+ * @param {Number} - Get date and assign to variable
+ */
 let date = new Date()
+
+/**
+ * @param {String} time - variable for storing time as string
+ */
 let time
-let weekday 
+
+/**
+ * @param {String} weekday - variable for storing weekday as string
+ */
+
+let weekday
+
+/**
+ * @param {String} month - variable for storing month as string
+ */
 let month
 
 
